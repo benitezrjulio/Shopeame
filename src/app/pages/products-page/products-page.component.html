@@ -1,0 +1,28 @@
+<div class="fondo">
+  <div class="texto">
+    <div class="contenedor-buscador">
+      <input
+        class="buscador"
+        [(ngModel)]="producto"
+        type="text"
+        placeholder="Buscador"
+        (input)="buscador()"
+      />
+    </div>
+    <h3>Listado de productos({{ products.length }})</h3>
+    <div class="card2">
+      <div *ngFor="let article of products" class="card">
+        <div>
+          <img [src]="article.image" alt="" />
+        </div>
+        <p class="titulo1">{{ article.description }}</p>
+        <h2 class="titulo2">${{ article.price }}</h2>
+        <p class="titulo3">{{ article.stars }}</p>
+        <p class="titulo4">{{ article.name }}</p>
+        <div class="delete">
+        <button class="delete-button" (click)="delete(article.id)">Borrar Producto</button>
+      </div>    
+      </div>
+    </div>
+  </div>
+</div>

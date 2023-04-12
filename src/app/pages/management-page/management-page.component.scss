@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #CCCCCC;
+}
+
+.carta {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 1100px;
+  height: 680px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fondo {
+  width: 50%;
+  padding: 30px;
+}
+
+.separar {
+  margin-top: 150px;
+  margin-bottom: 80px;
+  margin-left: 100px;
+  
+  height: 30vw;
+  width: 2px;
+  
+  background-color: #f89f21;
+}
+
+.card {
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.casilla {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #444444;
+  margin-bottom: 10px;
+}
+
+.editar {
+  width: 160px;
+  height: 32px;
+  float: right;
+  padding: 10px;
+  background-color: #f89f21;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editar:hover {
+  background-color: #f89f21;
+}
+
+.card-img-top{
+  width: 300px;
+}
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+// .container {
+//     background: #CCCCCC;;
+//   display: flex;
+
+// }
+
+// .fondo {
+//     background: white;
+//   width: 40%;
+//   border-radius: 10px;
+//   padding: 20px;
+//   margin: 60px;
+//   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+// }
+
+// .texto {
+//   text-align: justify;
+// }
+
+// .formulario {
+//   display: flex;
+//   flex-direction: column;
+//   margin-top: 20px;
+// }
+
+// .casilla {
+//   width: 60%;
+//   padding: 10px;
+//   margin: 10px 0px;
+//   border-color: black;
+//   border-radius: 5px;
+//   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+// }
+
+// .editar {
+//   background-color: #007bff;
+//   color: white;
+//   padding: 10px 20px;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   margin-top: 20px;
+//   transition: background-color 0.3s ease-in-out;
+// }
+
+// .editar:hover {
+//   background-color: #0062cc;
+// }
+
+// .container{
+//     display: flex;
+//     justify-content: space-around;
+// }
+// .separar{
+
+//     width: 2px;
+//     background-color: #FFC970;
+// }

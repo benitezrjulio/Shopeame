@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="carta">
+    <div class="fondo">
+      <div class="texto">
+        <h2>Creación de productos</h2>
+
+        <form class="formulario">
+          <p>Nombre del producto:</p>
+          <input
+            [(ngModel)]="article.name"
+            type="text"
+            name="Nombre"
+            placeholder="Por ej: Tiesto para planta"
+            class="casilla"
+          />
+          <p>Precio:</p>
+          <input
+            [(ngModel)]="article.price"
+            type="number"
+            name="precio"
+            placeholder="Por ej: 9.90"
+            class="casilla"
+          />
+          <p>Descripción</p>
+          <input
+            [(ngModel)]="article.description"
+            type="text"
+            name="descripcion"
+            placeholder="Por ej: Lo más vendido este mes"
+            class="casilla"
+          />
+          <p>Ruta de la imagen</p>
+          <input
+            [(ngModel)]="article.image"
+            type="text"
+            name="imagen"
+            placeholder="Por ej: http://talisto.com/img.jpg"
+            class="casilla"
+          />
+          <p>Opiniones:</p>
+          <input
+            [(ngModel)]="article.stars"
+            type="number"
+            name="stars"
+            placeholder="Por ej: 4.5"
+            class="casilla"
+          />
+          <div>
+            <button (click)="post()" class="editar">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="separar"></div>
+
+    <div class="card">
+      <img [src]="article.image" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">{{ article.name }}</h5>
+        <p class="card-text">{{ article.description }}</p>
+        <p class="card-text">
+          <small class="text-muted">{{ article.stars }} </small>
+        </p>
+        <p class="card-text font-weight-bold">{{ article.price | currency }}</p>
+      </div>
+    </div>
+  </div>
+</div>

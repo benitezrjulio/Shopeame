@@ -1,0 +1,76 @@
+.texto {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 100px;
+}
+
+.fondo {
+  display: flex;
+  background-color: #cccccc;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 472px;
+  margin: 40px;
+}
+.card2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card img {
+  height: 150px;
+  width: 250px;
+}
+
+.titulo1 {
+  font-size: large;
+  color: #19191d;
+}
+.titulo2 {
+  font-size: large;
+  font-weight: 700;
+  color: #000000;
+}
+
+.titulo4 {
+  font-size: small;
+  font-size: large;
+  color: #787885;
+}
+
+.contenedor-buscador {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+input[type="text"] {
+  width: 150px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.delete {
+  position: relative;
+  display: inline-block;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border-color: #f00;
+ 
+}
+
